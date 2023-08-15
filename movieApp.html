@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "main-heading">
+        <h1>My favorite Movies</h1>
+        <form class="form" id="newMovie">
+            <div class="formGroup">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="formCount">
+            </div>
+            <div class="formGroup">
+                <label for="rating">Title</label>
+                <input type="number" id="rating" min="0" max="10" class="formCount">
+            </div>
+            <div class="formGroup">
+                <button type="submit" class="btn formCount">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <table class="table">
+        <thead class="thead">
+            <tr>
+                <th scope="col">Title<i id="title" class="fas fa-sort-down"></i></th>
+                <th scope="col">Rating<i id="rating" class="fas fa-sort-down"></i></th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody id="movieContent"></tbody>
+    </table>
+    <script src="movieApp.js"></script>
+</body>
+</html>
